@@ -18,6 +18,10 @@ body {
   color: white;
 }
 
+.firstContainer_text_end {
+  color: #C49EF8;
+}
+
 .firstContainer_block {
   background-color: #F64243;
   height: 100px;
