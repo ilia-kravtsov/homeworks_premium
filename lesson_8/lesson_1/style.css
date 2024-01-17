@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(28,28,28,1);
+  padding: 30px;
+}
+
+.firstContainer {
+  background-color: #433C3B;
+}
+
+.firstContainer_text {
+  font-size: 18px;
+  color: white;
+}
+
+.firstContainer_block {
+  background-color: #F64243;
+  height: 100px;
+  width: 100px;
+}
+
+.secondContainer {
+  background-color: #C49EF8;
+  width: 300px;
+}
+
+.secondContainer_text {
+  font-size: 18px;
+}
+
+.secondContainer_element {
+  background-color: #7342B6;
+  color: white;
+  font-size: 18px;
+}
