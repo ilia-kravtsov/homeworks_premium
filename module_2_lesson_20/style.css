@@ -28,5 +28,19 @@ footer {
 
 footer a {
   color: white;
-  text-decoration: underline;
+}
+
+dl, blockquote {
+  background-color: #F6E8CD;
+}
+
+blockquote {
+  padding: 10px;
+}
+
+dl {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
