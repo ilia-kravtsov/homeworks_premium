@@ -1,0 +1,32 @@
+ul, li, nav, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  height: 60px;
+  background-color: #E5AD50;
+}
+
+.header_navigation_list {
+  display: flex;
+  gap: 5px;
+}
+
+dt {
+  margin-top: 20px;
+}
+
+
+footer {
+  color: white;
+  background-color: rgba(123,44,221,0.97);
+  height: 300px;
+  padding: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
