@@ -1,0 +1,29 @@
+.text_1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.text_2 {
+    text-decoration: line-through;
+}
+
+.text_3 {
+    text-transform: uppercase;
+}
+
+.text_4 {
+    word-spacing: 30px;
+}
+
+.text_5 {
+    letter-spacing: 5px;
+}
+
+.text_6 {
+    background-color: #fff;
+    color: #000;
+    mix-blend-mode: difference;
+}
