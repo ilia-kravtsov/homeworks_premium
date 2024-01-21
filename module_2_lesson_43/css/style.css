@@ -1,0 +1,268 @@
+body {
+    background-color: #181E34;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer {
+    width: 1440px;
+}
+
+/* ___________________________________________________ header styles _______________________________________________  */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 36px 0;
+}
+
+.headerContentContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    width: 70%;
+}
+
+.logo {
+    width: 48px;
+}
+
+.headerContentContainer nav {
+    display: flex;
+}
+
+.headerContentContainer ul {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.headerContentContainer ul a {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.headerContentContainer button {
+    padding: 14px 30px;
+    background-color: white;
+    width: 113px;
+    height: 48px;
+    border-radius: 40px;
+    color: #2766AE;
+    text-transform: capitalize;
+    margin-left: 34px;
+}
+/* ___________________________________________________ header styles _______________________________________________  */
+
+/* ___________________________________________________ main styles _________________________________________________  */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.firstContainer {
+    background-image: url("./assets/rectangle_1.png");
+    height: 508px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.firstContainerContent {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.firstContainerContentLeft {
+    width: 436px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.firstContainerContentLeft p {
+    height: 72px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.firstContainerContentLeft a {
+    color: #01A2CB;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.firstContainerContentRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mainButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background: linear-gradient(180deg, #00A4CC 0%, #2766AE 100%);
+    width: 320px;
+    height: 56px;
+    border-radius: 100px;
+}
+
+.mainButton svg {
+    width: 16px;
+    height: 16px;
+}
+
+.secondContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 808px;
+}
+
+.secondContainerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    height: 568px;
+}
+
+.secondContainerContent p {
+    width: 513px;
+    height: 48px;
+    margin-top: 15px;
+}
+
+.secondContainerContent button {
+    margin-top: 30px;
+}
+
+.itemsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top: 60px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 204px;
+    height: 141px;
+    border-radius: 16px;
+    border: 2px solid #176BAE;
+    background: #197CB8;
+    box-shadow: 4px 4px 13px 0 rgba(11, 15, 30, 0.79);
+    padding: 28px;
+    gap: 10px;
+}
+
+.item h3 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.item p {
+    width: 144px;
+    height: 48px;
+    text-align: center;
+}
+
+
+/* ___________________________________________________ main styles _________________________________________________  */
+
+/* ___________________________________________________ footer styles _______________________________________________  */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 361px;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 811px;
+    height: 241px;
+}
+
+.firstFooterBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 267px;
+    height: 96px;
+}
+
+.secondFooterBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 115px;
+    height: 241px;
+}
+
+.secondFooterBlock ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 47px);
+}
+
+footer h4 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.thirdFooterBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 115px;
+    height: 173px;
+}
+
+.thirdFooterBlock ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 47px);
+}
+
+
+/* ___________________________________________________ footer styles _______________________________________________  */
+
