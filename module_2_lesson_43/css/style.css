@@ -11,7 +11,7 @@ body {
     width: 1440px;
 }
 
-/* ___________________________________________________ header styles _______________________________________________  */
+/* ___________________________________________________ header styles start _________________________________________  */
 
 header {
     display: flex;
@@ -25,11 +25,12 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 48px;
-    width: 70%;
+    width: 900px;
 }
 
 .logo {
     width: 48px;
+    height: 48px;
 }
 
 .headerContentContainer nav {
@@ -49,7 +50,7 @@ header {
     line-height: 24px;
 }
 
-.headerContentContainer button {
+.headerContentContainerButton {
     padding: 14px 30px;
     background-color: white;
     width: 113px;
@@ -58,22 +59,27 @@ header {
     color: #2766AE;
     text-transform: capitalize;
     margin-left: 34px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-/* ___________________________________________________ header styles _______________________________________________  */
+/* ___________________________________________________ header styles end ___________________________________________  */
 
-/* ___________________________________________________ main styles _________________________________________________  */
+/* ___________________________________________________ main styles start ___________________________________________  */
 main {
     display: flex;
     flex-direction: column;
 }
 
 .firstContainer {
-    background-image: url("./assets/rectangle_1.png");
+    background: url("assets/background_1.png");
     height: 508px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    padding: 120px 0;
 }
 
 .header {
@@ -88,6 +94,7 @@ main {
     display: flex;
     justify-content: space-between;
     width: 900px;
+    margin-top: 60px;
 }
 
 .firstContainerContentLeft {
@@ -105,11 +112,12 @@ main {
     line-height: 24px;
 }
 
-.firstContainerContentLeft a {
+.firstContainerContentLeft span {
     color: #01A2CB;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-left: 5px;
 }
 
 .firstContainerContentRight {
@@ -130,7 +138,19 @@ main {
     border-radius: 100px;
 }
 
-.mainButton svg {
+.mainButtonWithIcon {
+    display: flex;
+    padding: 18px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 320px;
+    height: 56px;
+    border-radius: 100px;
+    background: linear-gradient(95deg, #00A4CC 6.7%, #2766AE 91.35%);
+}
+
+.mainButtonWithIcon img {
     width: 16px;
     height: 16px;
 }
@@ -138,8 +158,8 @@ main {
 .secondContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 808px;
+    padding: 120px 0;
 }
 
 .secondContainerContent {
@@ -147,13 +167,14 @@ main {
     flex-direction: column;
     align-items: center;
     width: 900px;
-    height: 568px;
 }
 
 .secondContainerContent p {
     width: 513px;
     height: 48px;
     margin-top: 15px;
+    text-align: center;
+    line-height: 24px;
 }
 
 .secondContainerContent button {
@@ -162,8 +183,6 @@ main {
 
 .itemsContainer {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 28px;
     margin-top: 60px;
@@ -181,7 +200,6 @@ main {
     background: #197CB8;
     box-shadow: 4px 4px 13px 0 rgba(11, 15, 30, 0.79);
     padding: 28px;
-    gap: 10px;
 }
 
 .item h3 {
@@ -196,20 +214,26 @@ main {
     width: 144px;
     height: 48px;
     text-align: center;
+    line-height: 24px;
 }
 
+/* ___________________________________________________ main styles end _____________________________________________  */
 
-/* ___________________________________________________ main styles _________________________________________________  */
+/* ___________________________________________________ footer styles start _________________________________________  */
 
-/* ___________________________________________________ footer styles _______________________________________________  */
 footer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 60px 0;
     height: 361px;
+    border-top: 1px solid #323952;
 }
 
 .footerContainer {
+    width: 900px;
+}
+
+.footerContent {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -221,11 +245,23 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
     width: 267px;
-    height: 96px;
+    height: 159px;
 }
 
-.secondFooterBlock {
+.firstFooterBlock {
+    line-height: 24px;
+}
+
+.alignFooterContainer {
+    width: 347px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerColumn {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -233,11 +269,13 @@ footer {
     height: 241px;
 }
 
-.secondFooterBlock ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.footerColumn ul {
     height: calc(100% - 47px);
+}
+
+.footerColumn li {
+    margin-bottom: 10px;
+    line-height: 24px;
 }
 
 footer h4 {
@@ -248,21 +286,5 @@ footer h4 {
     text-transform: uppercase;
 }
 
-.thirdFooterBlock {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 115px;
-    height: 173px;
-}
-
-.thirdFooterBlock ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: calc(100% - 47px);
-}
-
-
-/* ___________________________________________________ footer styles _______________________________________________  */
+/* ___________________________________________________ footer styles end ___________________________________________  */
 
