@@ -9,7 +9,7 @@ body {
 }
 
  form {
-     width: 300px;
+     width: 400px;
      margin: 0 auto;
      padding: 20px;
      background-color: #f2f2f2;
@@ -32,10 +32,7 @@ legend {
     border-radius: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
+input[type='text'],input[type='tel'],input[type='number'],input[type='email'], textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -45,12 +42,36 @@ textarea {
 }
 
 legend {
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 textarea {
     resize: none;
     padding: 10px;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox input[type='checkbox'] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type='radio'] {
+    width: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 button {
@@ -62,7 +83,12 @@ button {
     cursor: pointer;
 }
 
+button[type='reset'] {
+    margin-top: 10px;
+}
+
 button:hover {
     background-color: #45a049;
 }
+
 
