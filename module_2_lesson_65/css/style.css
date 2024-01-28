@@ -9,3 +9,21 @@ body {
     height: 100vh;
 }
 
+.wrapper img {
+    animation: appearing 2s;
+    border-radius: 10px;
+}
+
+@keyframes appearing {
+    from {
+        margin-top: -400px;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+
+
