@@ -1,0 +1,105 @@
+body {
+    background-color: #1b1b1d;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    padding: 50px;
+    min-height: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid yellow;
+}
+
+.grid {
+    margin-bottom: 200px;
+    padding-bottom: 200px;
+    min-height: 100vh;
+    border: 1px solid cadetblue;
+}
+
+.item {
+    border: 5px dashed #555;
+    font-size: 40px;
+    padding: .8em;
+    text-align: center;
+}
+
+/* ======================================================== */
+
+.grid-1 {
+    display: grid;
+    height: 800px;
+    /*grid-template-columns: 1fr minmax(200px, 1fr) 1fr;*/
+    /*grid-template-rows: 1fr 1fr;*/
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template: repeat(2, 100px) / repeat(3, 1fr); /* grid-template-rows first */
+
+    /* выравнивание элементов относительно своей ячейке сформированной в gtc gtr */
+    /*justify-items: center;*/
+    /*align-items: center;*/
+
+    /* выравнивание всех элементов сразу относительно родителя */
+    justify-content: center;
+    align-content: center;
+
+    /* отступы между ячейками */
+    column-gap: 10px; /* отступы между колонками */
+    row-gap: 10px; /* отступы между строками */
+    gap: 10px 10px; /* общее свойство для верхних двух сначала идет row-gap, можно указывать в %
+    тогда будет браться от ширины grid родителя, работает и для flex-box */
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+
+    /*!* Свойства для неявной сетки *!*/
+    /*grid-auto-columns: auto;*/
+    /*grid-auto-rows: 200px;*/
+    grid-auto-columns: 300px;
+    grid-auto-flow: column; /* говорим что каждый элемент сетки станет колонкой */
+}
+
+/* ячейки грид и элементы грид это отдельные сущности */
+
+.grid-3 {
+    display: grid;
+    grid-template: [row_1] 1fr [row_2] 1fr [row_3] 1fr / repeat(3, 1fr)
+}
+
+.grid-4__item--1 {
+    /* эти свойства отвечают за размещение конкретного элемента */
+    /* первый элемент своей верхней линией стартует с верхней границы 1 горизонтальной линии */
+    grid-row-start: auto;  /* с какой горизонтальной grid line стартует наш первый элемент */
+    /* окончание первого элемента на нижней границе второй горизонтальной линии */
+    grid-row-end: auto;
+
+    /* тоже самое но уже для вертикальной grid line
+    растягиваем ячейку с первой до третьей линии*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.grid-4__item--2 {
+
+}
+.grid-4__item--3 {
+    grid-column: 2 / 4;
+    grid-row: row2 / row4;
+}
+.grid-4__item--4 {
+
+}
+.grid-4__item--5 {
+    /* растягиваем по вертикали */
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.grid-4__item--6 {
+
+}
