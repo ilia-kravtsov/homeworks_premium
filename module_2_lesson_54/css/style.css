@@ -1,0 +1,47 @@
+body {
+    background-color: #181E34;
+    color: white;
+    font-family: Montserrat, sans-serif;
+}
+
+.spacer {
+    height: 3000px;
+}
+
+.rectangle {
+    position: fixed;
+    background-color: rgba(237,230,229,0.97);
+    min-height: 100px;
+    left: 50%;
+    right: 50px;
+    bottom: 100px;
+    border-radius: 10px;
+}
+
+.rectangle__circle {
+    position: absolute;
+    background-color: rgba(237,48,41,1);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    bottom: 50%;
+    left: 100px;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #181E34;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(237,230,229,0.97);
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(237,230,229,0.97) #181E34;
+}
