@@ -251,7 +251,7 @@
     border-radius: 0 100px 100px 0;
     text-align: center;
 
-    animation: badge-action 3s infinite alternate;
+    animation: badge-action 2s infinite alternate;
 }
 @keyframes badge-action {
     0% {
