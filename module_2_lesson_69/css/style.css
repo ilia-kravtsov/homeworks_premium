@@ -249,6 +249,7 @@
     background: var(--font-color);
     padding: 18px 15px;
     border-radius: 0 100px 100px 0;
+    text-align: center;
 
     animation: badge-action 3s infinite alternate;
 }
