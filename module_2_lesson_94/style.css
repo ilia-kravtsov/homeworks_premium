@@ -1,0 +1,35 @@
+.page {
+    background-color: #1a1a1c;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+    min-height: 50%;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.buttons__button {
+    cursor: pointer;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    width: 100px;
+    border-radius: 5px;
+    transition: all 0.1s;
+    text-align: center;
+}
+
+.buttons__button:active {
+    transform: scale(0.94);
+}
