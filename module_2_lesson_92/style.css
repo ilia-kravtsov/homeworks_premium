@@ -20,6 +20,7 @@
     padding: 20px;
     width: 50%;
     min-height: 50%;
+    border: 2px solid white;
     border-radius: 5px;
 }
 
@@ -47,7 +48,6 @@
     justify-content: center;
     background-color: #000000c1;
     transition: all 0.4s;
-    border: 5px solid white;
 }
 
 .modal__window {
