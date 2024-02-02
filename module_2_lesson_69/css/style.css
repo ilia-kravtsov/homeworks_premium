@@ -2,7 +2,6 @@
     --accent-text: #1D6FB6;
     --font-color: #F8FCFF;
 }
-
 .page {
     font-family: 'Montserrat', 'Arial', sans-serif;
     line-height: normal;
@@ -101,7 +100,7 @@
     right: 0;
     background: #102e49cc;
 }
-.button {
+.link-button {
     display: flex;
     height: 56px;
     width: 100%;
@@ -119,7 +118,7 @@
     line-height: normal;
     transition: all .5s;
 }
-.button:hover {
+.link-button:hover {
     background: #83ADD3;
     color: var(--font-color);
 }

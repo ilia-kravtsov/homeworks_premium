@@ -33,7 +33,7 @@ body {
     font-size: inherit;
 }
 
-.button {
+.link-button {
     display: block;
     background-color: #555;
     border-radius: 2em;
@@ -58,7 +58,7 @@ body {
     color: red;
 }
 
-.button:active {
+.link-button:active {
     background: rgb(101, 101, 226);
 }
 :focus {

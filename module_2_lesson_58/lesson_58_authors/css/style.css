@@ -12,7 +12,7 @@ body {
     height: 100%;
 }
 
-.button {
+.link-button {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@ body {
 
 /* ========================================================= */
 
-.button {
+.link-button {
     transition: background .3s, border-radius .3s .3s;
 
     /* transition-duration: .3s, .3s; */
@@ -58,7 +58,7 @@ body {
     /* transition-delay: ; */
     /* transition-timing-function: ; */
 }
-.button:hover {
+.link-button:hover {
     background: rgb(238, 131, 131);
     border-radius: 100px;
 }

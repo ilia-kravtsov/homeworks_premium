@@ -1,0 +1,233 @@
+:root {
+    --background-color-1: #FFF9F4;
+    --background-color-2: #FFE0CB;
+    --accent-color: #FFA55C;
+    --accent-color_2: #FF9138;
+    --header-color: #1F1711FF;
+    --text-color: #312C27FF;
+}
+
+.page {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    line-height: 1.5;
+    background: var(--background-color-1);
+    color: var(--font-color);
+    /*
+    по умолчанию
+    font-size: 16px;
+    font-weight: 400;
+     */
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%; /* профилактика горизонтального скролла */
+    overflow: hidden; /* профилактика вертикального скролла */
+    display: flex;
+    flex-direction: column;
+}
+
+.link-button {
+    width: 100%;
+    background-color: var(--accent-color);
+    padding: 18px 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: background-color 0.4s;
+    cursor: pointer;
+}
+
+.link-button:hover {
+    background-color: var(--accent-color_2);
+}
+
+/* ________________________ header ________________________*/
+
+.header {
+    width: 100vw;
+    padding-top: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/decor/bg-header.png") 50% 100% / cover no-repeat;
+}
+
+.header__top {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header__logo {
+    width: 173px;
+    height: 57px;
+}
+
+.nav {
+
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+}
+
+.nav__item {
+
+}
+
+.nav__link {
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.nav__link::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -13px;
+    width: 34px;
+    height: 34px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: -1;
+}
+
+.nav__link:hover::before {
+    opacity: 1;
+}
+
+.header__content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+    gap: 30px;
+    padding: 50px 0 140px;
+}
+
+.header__content-left-side {
+    max-width: 519px;
+}
+
+.header__info {
+    color: #B197B2;
+    text-transform: uppercase;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__info span {
+    display: flex;
+    align-items: center;
+}
+
+.header__info span::after {
+    content: '';
+    background: #B197B2;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    margin: 0 10px;
+    display: block;
+}
+
+.header__info span:last-child::after {
+    content: none;
+}
+
+.dot {
+
+}
+
+.header__title {
+    color: var(--header-color);
+    font-family: Gabriola;
+    font-size: 74px;
+    line-height: 0.82;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.header__title-text {
+    margin-bottom: 40px;
+    max-width: 358px;
+}
+
+.header__link-button {
+    max-width: 358px;
+}
+
+.header__content-right-side {
+    position: relative;
+    margin-right: 247px;
+    color: var(--text-color);
+}
+
+.header__content-right-side img {
+
+}
+
+.header__content-play-link {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 200px;
+    width: 100%;
+    bottom: 11%;
+    left: calc(100% - 39px);
+}
+
+.header__content-play-link-button {
+    background-color: #FFE0CB;
+    box-shadow: 0 4px 20px rgba(184, 148, 126, 0.3);
+    border-radius: 50%;
+    width: 78px;
+    height: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.header__content-play-link-button:before {
+    content: '';
+    position: absolute;
+    border: 1px solid var(--accent-color);
+    inset: 5px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.header__content-play-link-button:hover:before {
+    opacity: 1;
+}
+
+.header__content-play-link-button img {
+    padding-left: 8.8%;
+}
+
+/* ________________________ main ________________________*/
+
+.main {
+    flex-grow: 1;
+}
