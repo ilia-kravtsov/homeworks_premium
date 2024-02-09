@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page page--opened-modal">
+<body class="page">
 <div class="wrapper">
     <header class="header">
         <div class="header__top">
@@ -52,7 +52,7 @@
                     <span>Старт</span>
                     <span>26.06.2023</span>
                 </div>
-                <h1 class="header__title">
+                <h1 class="header__title title">
                     Научись печь торты и десерты с нуля
                 </h1>
                 <p class="header__title-text">
@@ -91,7 +91,7 @@
             </div>
             <div class="idea__header-section">
                 <div class="idea__header">
-                    <h2 class="idea_title">
+                    <h2 class="idea__title">
                         Наша школа —
                     </h2>
                     <span class="idea__title-text">
@@ -101,40 +101,50 @@
                 <p class="idea__text">
                     С нами ты погрузишься в удивительный мир кондитерского искусства, получишь новые знания и профессиональные навыки! Обретёшь веру в свои силы, научишься приготовлению разнообразных современных и классических десертов
                 </p>
-                <ul class="idea__grid">
-                    <li class="idea__item">
-                        <div class="idea__item-img">
-                            <img src="img/icons/hat-2.svg" alt="">
-                        </div>
-                        <p class="idea__item-text">
-                            Живое общение с наставниками и одногруппниками
-                        </p>
-                    </li>
-                    <li class="idea__item">
-                        <div class="idea__item-img">
-                            <img src="img/icons/hat-2.svg" alt="">
-                        </div>
-                        <p class="idea__item-text">
-                            Предоставление всех необходимых материалов
-                        </p>
-                    </li>
-                    <li class="idea__item">
-                        <div class="idea__item-img">
-                            <img src="img/icons/hat-2.svg" alt="">
-                        </div>
-                        <p class="idea__item-text">
-                            Небольшие группы до 6 человек
-                        </p>
-                    </li>
-                    <li class="idea__item">
-                        <div class="idea__item-img">
-                            <img src="img/icons/hat-2.svg" alt="">
-                        </div>
-                        <p class="idea__item-text">
-                            Большие аудитории для обучения
-                        </p>
-                    </li>
-                </ul>
+            </div>
+            <ul class="idea__grid">
+                <li class="idea__item">
+                    <div class="idea__item-img">
+                        <img src="img/icons/hat-2.svg" alt="">
+                    </div>
+                    <p class="idea__item-text">
+                        Живое общение с наставниками и одногруппниками
+                    </p>
+                </li>
+                <li class="idea__item">
+                    <div class="idea__item-img">
+                        <img src="img/icons/hat-2.svg" alt="">
+                    </div>
+                    <p class="idea__item-text">
+                        Предоставление всех необходимых материалов
+                    </p>
+                </li>
+                <li class="idea__item">
+                    <div class="idea__item-img">
+                        <img src="img/icons/hat-2.svg" alt="">
+                    </div>
+                    <p class="idea__item-text">
+                        Небольшие группы до 6 человек
+                    </p>
+                </li>
+                <li class="idea__item">
+                    <div class="idea__item-img">
+                        <img src="img/icons/hat-2.svg" alt="">
+                    </div>
+                    <p class="idea__item-text">
+                        Большие аудитории для обучения
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="main__program program">
+            <div class="program__top">
+                <div class="program__heading">
+                    <h2 class="program__title">
+
+                    </h2>
+                </div>
             </div>
         </section>
 
@@ -254,9 +264,9 @@
             Оставь свой e-mail, и мы вышлем рецепт на почту
         </p>
         <form action="" class="modal__form">
-            <label class="modal__form-label">
+            <label class="modal__form-label field">
+                <input type="email" class="field__input" placeholder="E-mail">
                 <span>Введите e-mail</span>
-                <input type="email" class="modal__form-input" placeholder="E-mail">
             </label>
             <button type="submit" class="modal__button link-button">Получить подарок</button>
         </form>
