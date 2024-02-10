@@ -57,6 +57,10 @@
     line-height: 1.6;
     transition: background-color 0.4s;
     cursor: pointer;
+    color: rgb(49, 44, 39);
+    font-family: Montserrat;
+    font-weight: 500;
+    text-align: center;
 }
 
 .link-button:hover {
@@ -587,6 +591,9 @@
 .program__title {
     margin-bottom: 20px;
 }
+.program__tab-content {
+    margin-bottom: 40px;
+}
 .program__text {
 }
 .tab-controls {
@@ -688,7 +695,6 @@
     transition: var(--transition);
     overflow: hidden;
     border-radius: 20px;
-
 }
 .accordion-content {
     display: flex;
@@ -710,6 +716,7 @@
 }
 .accordion-content__item {
     margin-bottom: 20px;
+    display: flex;
 }
 .accordion-content__item:last-child {
     margin-bottom: 0;
@@ -722,10 +729,88 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right: 4px;
+    margin-right: 8px;
+    flex-shrink: 0;
 }
 .accordion-content__text {
     max-width: 274px;
+    width: 100%;
+}
+
+.program__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.program__action {
+    display: grid;
+    grid-template: repeat(3, auto) / 1.65fr 1fr;
+    gap: 40px;
+    max-width: 501px;
+}
+.program__discount {
+    grid-row: 1 / 3;
+    background-color: var(--background-color-2);
+    border-radius: var(--border-radius);
+    font-size: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.program__discount-hurry-up {
+    align-self: start;
+}
+.program__discount-value {
+    font-family: Gabriola;
+    font-size: 74px;
+    line-height: .82;
+    align-self: center;
+    transform-origin: 0 0;
+    margin: 0 0 7px 13%;
+    color: var(--accent-color);
+
+    animation: discount-growing .5s linear infinite alternate;
+}
+
+@keyframes discount-growing {
+    0% {
+        color: var(--accent-color)
+    }
+
+    100% {
+        transform: translateX(4%) scale(1.1);
+        color: #FF9138;
+    }
+}
+
+.program__discount-data {
+    font-size: 16px;
+    margin-left: 35%;
+}
+.program__price {
+}
+.program__price-text {
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: #CEAAD0;
+    margin-bottom: 5px;
+}
+.program__price-value {
+    font-family: Gabriola;
+    font-size: 32px;
+    line-height: .9;
+}
+.program__price-value--big {
+    font-size: 48px;
+    color: var(--header-color);
+}
+.program__link-button {
+    grid-column: 1 / -1;
+}
+.program__img {
+}
+.program__img img {
     width: 100%;
 }
 

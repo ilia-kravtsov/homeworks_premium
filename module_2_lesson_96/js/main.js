@@ -96,14 +96,26 @@ tabControls.addEventListener('click', (e) => {
 const accordionLists = document.querySelectorAll('.accordion-list')
 
 accordionLists.forEach(el => {
+  const listItemOpened = document.querySelector('.accordion-list__item--opened .accordion-list__content');
+  if (listItemOpened) {
+    listItemOpened.style.maxHeight = listItemOpened.scrollHeight + 'px';
+  }
   
   el.addEventListener('click', (e) => {
-    const accordionControl = e.target.closest('.accordion-list__control')
+    const accordionControl = e.target.closest('.accordion-list__control');
     if(!accordionControl) return;
+    
     const accordionItem = accordionControl.parentElement;
     const accordionContent = accordionControl.nextElementSibling;
     
-    console.log(accordionContent) // .accordion-list__content
+    const accordionList = e.currentTarget;
+    const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened');
+    const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content');
+    
+    if (accordionOpenedItem && accordionItem !== accordionOpenedItem) {
+      accordionOpenedItem.classList.remove('accordion-list__item--opened');
+      accordionOpenedContent.style.maxHeight = null;
+    }
     
     accordionItem.classList.toggle('accordion-list__item--opened');
     
@@ -112,5 +124,5 @@ accordionLists.forEach(el => {
     } else {
       accordionContent.style.maxHeight = null;
     }
-  })
-})
+  });
+});
