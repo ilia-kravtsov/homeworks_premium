@@ -15,11 +15,6 @@
     line-height: 1.5;
     background: var(--background-color-1);
     color: var(--text-color);
-    /*
-    по умолчанию
-    font-size: 16px;
-    font-weight: 400;
-     */
 }
 
 .page--opened-menu {
@@ -32,8 +27,8 @@
 
 .wrapper {
     min-height: 100%;
-    width: 100%; /* профилактика горизонтального скролла */
-    overflow: hidden; /* профилактика вертикального скролла */
+    width: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
