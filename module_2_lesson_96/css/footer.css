@@ -1,0 +1,147 @@
+
+.footer {
+    color: var(--font-color);
+    background-color: #AB8261;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 60px 0 60px;
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: .9fr .9fr 1.1fr auto;
+    max-width: 1320px;
+    padding: 0 20px;
+    gap: 40px 30px;
+    width: 100%;
+}
+
+.footer__column-1 {
+    margin-top: -30px;
+}
+
+.footer__column-2 {
+
+}
+
+.footer__logo {
+    display: block;
+    max-width: 240px;
+}
+
+.footer__logo img {
+    width: 100%;
+}
+
+.footer__logo-text {
+}
+
+.social-networks {
+    margin-top: 20px;
+    line-height: 0;
+}
+
+.social-networks-icons-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-networks-icons__icon {
+
+}
+
+.social-networks-icons__link path {
+    transition: var(--transition);
+}
+
+.social-networks-icons__link:hover path {
+    fill: var(--accent-color)
+}
+
+.footer__column-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__column-item {
+
+}
+
+.footer__column-link {
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding: 10px 0 20px;
+    margin-top: -10px;
+}
+
+.footer__column-link::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -13px;
+    width: 34px;
+    height: 34px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: -1;
+}
+
+.footer__column-link:hover::before {
+    opacity: 1;
+}
+
+.footer__column-3 {
+
+}
+
+.footer__contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__contact-item {
+
+}
+
+.footer__contact-link span {
+    margin-left: 10px;
+}
+
+.footer__contact-link img {
+}
+
+.footer__column-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__column-4 address {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__column-tel {
+    display: block;
+    line-height: 1.6;
+    font-size: 24px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.footer__column-tel:hover {
+    color: var(--accent-color)
+}
+
+.footer__column-rights {
+    margin-top: 47px;
+    color: #DEC5B1;
+}
