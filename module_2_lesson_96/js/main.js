@@ -16,7 +16,7 @@ document.addEventListener('click', (e) => {
 // ============================== burger menu end ===================================
 
 
-// ============================== lesson №109 modal opened homework start ===========
+// ============================== lesson № 109 modal opened homework start ===========
 
 function modalOpener(e) {
   e.preventDefault()
@@ -59,11 +59,11 @@ document.addEventListener('click', (e) => {
 //   if (target.matches('.idea__image-link-button') || modalCLoseIcon || target.classList.contains('modal')) modalOpener(e);
 // });
 
-// =============================== lesson №109 modal opened homework end ===============
+// =============================== lesson № 109 modal opened homework end ===============
 
 
 
-// =============================== lesson 112 tabs start ================================
+// =============================== lesson № 112 tabs start ================================
 
 const tabControls = document.querySelector('.tab-controls')
 
@@ -91,7 +91,7 @@ tabControls.addEventListener('click', (e) => {
   
 });
 
-// =============================== lesson 114 Aккордеон ================================
+// =============================== lesson № 114 Aккордеон ================================
 
 const accordionLists = document.querySelectorAll('.accordion-list')
 
@@ -125,4 +125,23 @@ accordionLists.forEach(el => {
       accordionContent.style.maxHeight = null;
     }
   });
+});
+
+// ============================== lesson № 119 swiper connecting ==============================
+
+const swiper = new Swiper('.main__gallery-swiper', {
+  loop: true,
+  spaceBetween: 32, // px
+  slidesPerView: 4,
+  
+  pagination: {
+    el: '.main__gallery-pagination',
+    type: 'fraction'
+  },
+  
+  navigation: {
+    nextEl: '.main__gallery-next',
+    prevEl: '.main__gallery-prev',
+  },
+  
 });

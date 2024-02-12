@@ -4,7 +4,6 @@
 
 @import 'header.css';
 @import 'footer.css';
-@import 'media.css';
 
 .main {
     flex-grow: 1;
@@ -131,7 +130,7 @@
 .program {
     max-width: 1320px;
     width: 100%;
-    padding: 0 20px 145px 20px;
+    padding: 0 20px 140px 20px;
 }
 .program__top {
     display: flex;
@@ -372,38 +371,97 @@
 .main__gallery {
     max-width: 1320px;
     width: 100%;
-    padding: 0 20px 145px 20px;
+    padding: 0 20px 140px 20px;
 }
 .main__gallery-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 40px;
 }
 .main__gallery-img {
+    border: 1px solid red;
+    justify-self: center; /* выравнивание элемента по середине своей грид ячейки */
+}
+.main__gallery-img img {
+    max-width: 100%;
 }
 .main__gallery-content {
+    border: 1px solid red;
+    display: flex;
+    gap: 15px;
+    align-items: end;
+    justify-content: space-between;
 }
-.gallery__info {
+
+.main__gallery-info {
+    border: 1px solid red;
+    max-width: 380px;
 }
-.gallery__title {
+.main__gallery-title {
+    margin-bottom: 40px;
 }
-.title {
+.main__gallery-text {
+
+}
+.main__gallery-nav {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-family: Gabriola;
+    font-size: 42px;
+    line-height: .9;
+}
+.main__gallery-prev,
+.main__gallery-next {
+    background-color: transparent;
+    border: 1.5px solid var(--accent-color);
+    border-radius: 50%;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+.main__gallery-prev path,
+.main__gallery-next path{
+    transition: var(--transition);
+}
+.main__gallery-prev:hover path,
+.main__gallery-next:hover path{
+    fill: var(--background-color-1)
+}
+.main__gallery-prev:hover,
+.main__gallery-next:hover {
+    background-color: var(--accent-color);
+}
+.main__gallery-prev {
+
+}
+.main__gallery-pagination {
+    display: flex;
+}
+.main__gallery-next {
+
 }
 /* ________________________ swiper start ____________________ */
-.gallery__text {
-}
 .main__gallery-swiper {
 }
 .main__gallery-wrapper {
 }
 .main__gallery-slide {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+
 }
-.main__gallery-pagination {
-}
-.main__gallery-button-prev {
-}
-.main__gallery-button-next {
-}
-.main__gallery-scrollbar {
+.main__gallery-slide img {
+    width: 100%;
 }
 /* ________________________ swiper end ____________________ */
+
 /* ====================== main gallery end ================= */
 
 /* ====================== media start =================== */

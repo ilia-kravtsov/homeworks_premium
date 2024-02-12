@@ -188,3 +188,7 @@
 .modal__button {
 
 }
+
+button {
+    cursor: pointer;
+}
