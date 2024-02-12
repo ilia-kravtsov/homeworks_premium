@@ -192,7 +192,7 @@
 /* ________________________ header ________________________*/
 
 .header {
-    width: 100vw;
+    width: 100%;
     padding-top: 19px;
     display: flex;
     flex-direction: column;
@@ -202,8 +202,9 @@
 }
 
 .header__top {
-    max-width: 1280px;
     width: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -317,10 +318,10 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    max-width: 1280px;
+    max-width: 1320px;
     width: 100%;
     gap: 30px;
-    padding: 50px 0 140px;
+    padding: 50px 20px 140px 20px;
 }
 
 .header__content-left-side {
@@ -443,7 +444,8 @@
 
 .main__idea {
     margin: 140px 0;
-    max-width: 1280px;
+    max-width: 1320px;
+    padding: 0 20px;
     display: grid;
     grid-template-columns: 1fr 1.05fr;
     grid-template-rows: repeat(2, auto);
@@ -451,7 +453,7 @@
 }
 
 .main__program {
-    padding-bottom: 145px;
+
 }
 
 .idea {
@@ -572,8 +574,9 @@
 }
 
 .program {
-    max-width: 1280px;
+    max-width: 1320px;
     width: 100%;
+    padding: 0 20px 145px 20px;
 }
 .program__top {
     display: flex;
@@ -827,7 +830,8 @@
 .footer__inner {
     display: grid;
     grid-template-columns: .9fr .9fr 1.1fr auto;
-    max-width: 1280px;
+    max-width: 1320px;
+    padding: 0 20px;
     gap: 40px 30px;
     width: 100%;
 }
@@ -1052,6 +1056,10 @@
         display: flex;
     }
 
+    .program__bottom {
+        justify-content: center;
+    }
+
     .program__action {
         max-width: none;
         grid-template: repeat(3, auto) / minmax(280px, 1fr) 1fr;
@@ -1138,17 +1146,22 @@
     .accordion-content__text {
         max-width: none;
     }
+
+    .program__action {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
 
     .main__idea {
-        padding: 60px 0 80px;
+        padding: 60px 20px 80px 20px;
         margin: 0;
     }
 
-    .main__program {
-        padding: 0 0 80px;
+    .program {
+        padding-bottom: 80px;
     }
 
     .title {
