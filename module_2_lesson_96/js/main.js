@@ -129,7 +129,8 @@ accordionLists.forEach(el => {
 
 // ============================== lesson № 119 swiper connecting ==============================
 
-const swiper = new Swiper('.main__gallery-swiper', {
+// swiper gallery
+new Swiper('.main__gallery-swiper', {
   // loop: true,
   spaceBetween: 15, // px
   slidesPerView: 1.5,
@@ -154,6 +155,27 @@ const swiper = new Swiper('.main__gallery-swiper', {
     1101: {
       slidesPerView: 4,
     }
+  }
+  
+});
+
+// ============================== lesson № 121 swiper connecting ==============================
+
+// swiper feedback
+new Swiper('.feedback__swiper', {
+  // loop: true,
+  spaceBetween: 0, // px
+  slidesPerView: 2.1,
+  centeredSlides: true,
+  
+  navigation: {
+    nextEl: '.feedback__next',
+    prevEl: '.feedback__prev',
+  },
+  
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true
   }
   
 });
