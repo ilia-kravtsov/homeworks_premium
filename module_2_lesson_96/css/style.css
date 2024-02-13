@@ -646,6 +646,7 @@
 }
 .container {
     max-width: 1320px;
+    width: 100%;
     padding: 0 20px;
     height: 100%;
 }
@@ -659,13 +660,13 @@
     content: url("../img/decor/berries.png");
     position: absolute;
     top: -4%;
-    left: -1%;
+    left: 0;
 }
 .contact__inner::after {
     content: url("../img/decor/berries-2.png");
     position: absolute;
-    top: 7%;
-    right: -18%;
+    top: 4%;
+    right: 0;
 }
 .contact__img {
     position: relative;
@@ -726,7 +727,7 @@
     inset: 0;
     opacity: 0;
     transition: var(--transition);
-    background: url("../img/icons/check.svg") 50% 50% no-repeat;
+    background: url('../img/icons/check.svg') 50% 50% no-repeat;
 }
 .contact__checkbox:hover {
     border: 1.5px solid var(--accent-color);
@@ -769,11 +770,14 @@
 
     .header__content-right-side {
         margin-right: 0;
-        /*max-width: 377px;*/
     }
 
     .header__content-right-side > img {
         width: 100%;
+    }
+
+    .contact__inner::after {
+        top: -20%;
     }
 
     .footer__inner {
@@ -818,6 +822,10 @@
     .accordion-list__control {
         padding: 25px 30px;
         font-size: 35px;
+    }
+
+    .contact__inner {
+        align-items: center;
     }
 }
 
@@ -873,6 +881,19 @@
 
     .main__gallery-info {
         max-width: none;
+    }
+
+    .contact__inner {
+        justify-content: center;
+    }
+
+    .contact__img {
+        display: none;
+    }
+
+    .contact__title,
+    .contact__text {
+        text-align: center;
     }
 
     .footer__inner {
@@ -969,6 +990,10 @@
 
     .feedback__nav {
         align-self: end;
+    }
+
+    .contact__inner::before {
+        display: none;
     }
 }
 
@@ -1073,6 +1098,10 @@
         text-align: center;
         flex-direction: column;
         align-items: center;
+    }
+
+    .contact {
+        padding-bottom: 80px;
     }
 }
 
