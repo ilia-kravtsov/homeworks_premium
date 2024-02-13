@@ -162,3 +162,22 @@ html {
 button {
     cursor: pointer;
 }
+
+/* ========================= scrollbar start =================== */
+
+/* Для WebKit-браузеров (Safari и Chrome) */
+::-webkit-scrollbar {
+    width: 10px; /* Ширина скролла */
+}
+::-webkit-scrollbar-track {
+    background-color: var(--background-color-2); /* Цвет фона трека скролла */
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color); /* Цвет ползунка скролла */
+}
+/* Для Firefox */
+* {
+    scrollbar-width: thin; /* Толщина скролла */
+    scrollbar-color: var(--accent-color) var(--background-color-2); /* Цвет ползунка и трека скролла */
+}
+/* ========================= scrollbar end =================== */
