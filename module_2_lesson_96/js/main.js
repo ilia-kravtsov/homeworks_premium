@@ -130,9 +130,9 @@ accordionLists.forEach(el => {
 // ============================== lesson № 119 swiper connecting ==============================
 
 const swiper = new Swiper('.main__gallery-swiper', {
-  loop: true,
-  spaceBetween: 32, // px
-  slidesPerView: 4,
+  // loop: true,
+  spaceBetween: 15, // px
+  slidesPerView: 1.5,
   
   pagination: {
     el: '.main__gallery-pagination',
@@ -143,5 +143,17 @@ const swiper = new Swiper('.main__gallery-swiper', {
     nextEl: '.main__gallery-next',
     prevEl: '.main__gallery-prev',
   },
+  
+  breakpoints: {
+    600: {
+      slidesPerView: 3,
+    },
+    800: {
+      spaceBetween: 32,
+    },
+    1101: {
+      slidesPerView: 4,
+    }
+  }
   
 });

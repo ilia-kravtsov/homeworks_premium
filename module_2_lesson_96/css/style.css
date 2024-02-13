@@ -380,22 +380,20 @@
     margin-bottom: 40px;
 }
 .main__gallery-img {
-    border: 1px solid red;
+    align-self: center;
     justify-self: center; /* выравнивание элемента по середине своей грид ячейки */
 }
 .main__gallery-img img {
     max-width: 100%;
 }
 .main__gallery-content {
-    border: 1px solid red;
     display: flex;
-    gap: 15px;
+    gap: 30px 15px;
     align-items: end;
     justify-content: space-between;
 }
 
 .main__gallery-info {
-    border: 1px solid red;
     max-width: 380px;
 }
 .main__gallery-title {
@@ -405,14 +403,15 @@
 
 }
 .main__gallery-nav {
-    border: 1px solid red;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 98px;
     font-family: Gabriola;
     font-size: 42px;
     line-height: .9;
+    position: relative;
 }
+
 .main__gallery-prev,
 .main__gallery-next {
     background-color: transparent;
@@ -425,6 +424,24 @@
     align-items: center;
     justify-content: center;
     transition: var(--transition);
+}
+.swiper-button-disabled.main__gallery-prev,
+.swiper-button-disabled.main__gallery-next {
+    border: 1.5px solid #E1D9E1;
+    cursor: auto;
+}
+.swiper-button-disabled.main__gallery-prev:hover,
+.swiper-button-disabled.main__gallery-next:hover {
+    border: 1.5px solid #E1D9E1;
+    background: transparent;
+}
+.swiper-button-disabled.main__gallery-prev path,
+.swiper-button-disabled.main__gallery-next path {
+    fill: #E1D9E1;
+}
+.swiper-button-disabled.main__gallery-prev:hover path,
+.swiper-button-disabled.main__gallery-next:hover path {
+    fill: #E1D9E1;
 }
 .main__gallery-prev path,
 .main__gallery-next path{
@@ -443,6 +460,12 @@
 }
 .main__gallery-pagination {
     display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    width: auto;
+    transform: translate(-50%, -50%);
 }
 .main__gallery-next {
 
@@ -570,6 +593,18 @@
         display: none;
     }
 
+    .main__gallery-inner {
+        grid-template: none;
+    }
+
+    .main__gallery-img {
+        display: none;
+    }
+
+    .main__gallery-info {
+        max-width: none;
+    }
+
     .footer__inner {
         grid-template: none;
         justify-content: center;
@@ -661,6 +696,11 @@
         margin: 0;
     }
 
+    .program,
+    .main__gallery {
+        padding-bottom: 80px;
+    }
+
     .program {
         padding-bottom: 80px;
     }
@@ -730,6 +770,15 @@
 
     .accordion-list__control-icon svg {
         width: 10px;
+    }
+
+    .main__gallery-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__gallery-inner {
+        margin-bottom: 20px;
     }
 }
 
