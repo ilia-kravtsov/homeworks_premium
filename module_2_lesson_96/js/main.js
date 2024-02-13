@@ -186,5 +186,10 @@ new Swiper('.feedback__swiper', {
       slidesPerView: 2.1,
     },
   }
-  
 });
+
+// ============================== lesson № 124 phone mask ==============================
+
+const phoneInputs = document.querySelectorAll('input[type="tel"]')
+const im = new Inputmask('+7 (999) 999-99-99')
+im.mask(phoneInputs)
