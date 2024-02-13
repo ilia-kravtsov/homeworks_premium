@@ -165,7 +165,7 @@ new Swiper('.main__gallery-swiper', {
 new Swiper('.feedback__swiper', {
   // loop: true,
   spaceBetween: 0, // px
-  slidesPerView: 2.1,
+  slidesPerView: 1,
   centeredSlides: true,
   
   navigation: {
@@ -176,6 +176,15 @@ new Swiper('.feedback__swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
     draggable: true
+  },
+  
+  breakpoints: {
+    1201: {
+      slidesPerView: 1.5,
+    },
+    900: {
+      slidesPerView: 2.1,
+    },
   }
   
 });
