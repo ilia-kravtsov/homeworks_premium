@@ -11,22 +11,22 @@
     --transition: all .4s;
     --border-radius: 20px;
 }
-
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
 .page {
     font-family: 'Montserrat', 'Arial', sans-serif;
     line-height: 1.5;
     background: var(--background-color-1);
     color: var(--text-color);
 }
-
 .page--opened-menu {
     overflow: hidden;
 }
-
 .page--opened-modal {
     overflow: hidden;
 }
-
 .wrapper {
     min-height: 100%;
     width: 100%;
@@ -34,14 +34,12 @@
     display: flex;
     flex-direction: column;
 }
-
 .title {
     color: var(--header-color);
     font-size: 74px;
     line-height: 0.82;
     font-family: Gabriola;
 }
-
 .link-button {
     width: 100%;
     background-color: var(--accent-color);
@@ -59,7 +57,6 @@
     font-weight: 500;
     text-align: center;
 }
-
 .link-button:hover {
     background-color: var(--accent-color_2);
 }
@@ -72,21 +69,17 @@
     background: #00000071;
     z-index: 10;
     padding: 15px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     opacity: 0;
     visibility: hidden;
     transition: all .6s;
 }
-
 .page--opened-modal .modal {
     opacity: 1;
     visibility: visible;
 }
-
 .modal__window {
     background-color: var(--background-color-1);
     border-radius: var(--border-radius);
@@ -94,55 +87,41 @@
     position: relative;
     max-width: 428px;
 }
-
 .modal__close-button {
     position: absolute;
     top: 20px;
     right: 20px;
     cursor: pointer;
 }
-
 .modal__close-button path {
     transition: var(--transition);
 }
-
 .modal__close-button:hover path,
 .modal__close-button:hover rect {
     stroke: var(--input-color);
 }
-
 .modal__img {
     margin: -65px 0 15px 12px;
     max-width: 100%;
 }
-
 .modal__title {
     margin-top: 15px;
     margin-bottom: 10px;
-
     color: var(--text-color);
     font-family: Gabriola;
     font-size: 42px;
     line-height: .9;
 }
-
 .modal__text {
     margin-bottom: 30px;
 }
-
-.modal__form {
-
-}
-
 .modal__form-label {
     margin-bottom: 10px;
 }
-
 .field {
     position: relative;
     display: block;
 }
-
 .field span {
     opacity: 0;
     visibility: hidden;
@@ -153,7 +132,6 @@
     color: var(--input-color);
     transition: var(--transition);
 }
-
 .field__input {
     padding: 19px 42px 19px 28px;
     border-radius: 100px;
@@ -164,33 +142,23 @@
     font-size: 16px;
     transition: var(--transition);
 }
-
 .field__input:hover {
     border-color: var(--accent-color);
 }
-
 .field__input:hover::placeholder {
     color: rgb(255, 165, 92);
     transition: var(--transition);
 }
-
 .field__input::placeholder {
     color: var(--input-color);
 }
-
 .field__input:focus {
     padding: 26px 42px 12px 28px;
 }
-
 .field__input:focus + span{
     opacity: 1;
     visibility: visible;
 }
-
-.modal__button {
-
-}
-
 button {
     cursor: pointer;
 }

@@ -102,6 +102,7 @@ accordionLists.forEach(el => {
   }
   
   el.addEventListener('click', (e) => {
+    e.preventDefault()
     const accordionControl = e.target.closest('.accordion-list__control');
     if(!accordionControl) return;
     
