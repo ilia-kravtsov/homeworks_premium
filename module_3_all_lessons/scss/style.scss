@@ -1,0 +1,118 @@
+@import 'pages/blog';
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+/* =================================== */
+.block {
+  position: sticky;
+  color: white;
+}
+
+.privacy {
+  @import 'pages/privacy';
+}
+
+/* =================================== */
+.contacts {
+  background: $background-color;
+}
+
+.button {
+  background: $general-background-color;
+}
+
+@media (max-width: $mobile) {
+  .contacts {
+    background: brown;
+  }
+}
+/* =================================== */
+.testimonials {
+
+  &__heading {
+    color: #fff;
+
+    &--color-blue {
+      color: blue;
+    }
+  }
+
+  &--modificator {
+    color: #fff;
+  }
+
+  ul {
+    padding-top: 20px;
+  }
+
+  & .webp {
+    display: none;
+  }
+
+  background: {
+    color: #000;
+    repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 1000px) {
+    background: {
+      color: #fff;
+      repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: 414px) {
+  @media (max-width: 768px) {
+    .testimonials {
+      color: #fff;
+    }
+  }
+}
+
+/* =================================== */
+.button {
+  &::before {
+    @extend %pos-center;
+  }
+}
+
+.heading {
+  &::after {
+    @extend %pos-center;
+  }
+  @extend %hidden;
+}
+
+.slider {
+  position: relative;
+  &::after {
+    @include pos(20, 10);
+  }
+  width: 600px / 1100px;
+}
+
+.slider-2 {
+  position: relative;
+  &::after {
+    @include pos;
+  }
+  // width: 600px / 1100px * 100%;
+  background: 'some' + ' some';
+}
+/* =================================== */
+
+.element {
+  background: #{$brown-color}8d;
+}
+
+/* =================================== */
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
